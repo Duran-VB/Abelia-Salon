@@ -82,7 +82,9 @@ const HookInner: React.FC<HookProps> = ({ topA, bottomA, topB1, topB2, bottomB1,
         >
           {DIGITS.map((d, i) => {
             const start = i * STEP;
-            const enter = i === 0 ? tween(frame, [0, 10], [0.35, 0]) : tween(frame, [start, start + 8], [1, 0], SNAP);
+            // the first digit is on screen from frame 0 (cover frame) and punches in with scale
+            const enter = i === 0 ? 0 : tween(frame, [start, start + 8], [1, 0], SNAP);
+            const punch = i === 0 ? tween(frame, [0, 10], [0.3, 0]) : 0;
             const exit = i < DIGITS.length - 1 ? tween(frame, [start + STEP, start + STEP + 8], [0, -1], SNAP) : 0;
             if (frame < start || (i < DIGITS.length - 1 && frame > start + STEP + 8)) {
               return null;
@@ -101,8 +103,8 @@ const HookInner: React.FC<HookProps> = ({ topA, bottomA, topB1, topB2, bottomB1,
                   lineHeight: 1,
                   color: d === "0" ? C.signal : C.bone,
                   translate: `0px ${y * 640}px`,
-                  scale: i === 0 ? String(1 + enter * 0.4) : "1",
-                  filter: `blur(${Math.abs(y) * 30}px)`,
+                  scale: String(1 + punch),
+                  filter: `blur(${Math.abs(y) * 30 + punch * 12}px)`,
                   opacity: d === "0" && frame > 104 ? (glitch > 0.5 ? 1 : 0.2) : 1,
                 }}
               >

@@ -278,7 +278,8 @@ def build_music():
         return np.arange(start, end - 1e-6, step)
 
     # Intro 0-4s: tense sub drone + heartbeat kick on the countdown
-    place(m, pad([note(33), note(45)], 4.2, 300, 1.0) * 0.6, 0)
+    place(m, pad([note(33), note(45), note(52)], 4.2, 450, 0.6) * 1.1, 0)
+    place(m, sub(note(33), 4.0) * 0.35, 0)
     for b in [0, 1, 2, 3]:
         place(m, kick(0.8), b, 0.7)
     for b in beats(0.25, 4, BEAT / 2):
@@ -333,8 +334,8 @@ def build_music():
         place(m, pad([note(n_) for n_ in chord], dur, 1200, 0.2) * 0.22, start)
 
     # Breakdown 18-21s: filtered pad, single kick, riser
-    place(m, pad([note(45), note(57), note(60), note(64)], 1.5, 700, 0.3) * 0.5, 18.0)
-    place(m, pad([note(41), note(57), note(60), note(65)], 1.5, 900, 0.1) * 0.5, 19.5)
+    place(m, pad([note(45), note(57), note(60), note(64)], 1.5, 900, 0.3) * 0.9, 18.0)
+    place(m, pad([note(41), note(57), note(60), note(65)], 1.5, 1100, 0.1) * 0.9, 19.5)
     place(m, kick(1.2), 18.0, 0.9)
     place(m, sfx_riser(1.5), 19.5, 0.45)
 
@@ -370,7 +371,7 @@ def build_sfx():
             elif kind == "riser":
                 place(s, sfx_riser(cue["length"] / FPS), at, 0.55)
             elif kind == "impact":
-                place(s, sfx_impact(), at, 0.95)
+                place(s, sfx_impact(), at, 0.8)
             elif kind == "impactSoft":
                 place(s, sfx_impact(True), at, 0.7)
             elif kind == "stamp":

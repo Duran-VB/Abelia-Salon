@@ -1,6 +1,7 @@
 import { lightLeak } from "@remotion/effects/light-leak";
 import {
   AbsoluteFill,
+  Easing,
   Interactive,
   random,
   Solid,
@@ -99,7 +100,7 @@ const LogoInner: React.FC<LogoProps> = ({ label, tagline, style }) => {
             const s = STAMP_AT[i];
             const p = tween(frame, [s, s + 6], [0, 1]);
             const isA = l === "A";
-            const ejectT = tween(frame, [A_EJECT, A_EJECT + 16], [0, 1], EXPO_IN);
+            const ejectT = tween(frame, [A_EJECT, A_EJECT + 12], [0, 1], Easing.in(Easing.quad));
             const collapse = isA ? tween(frame, [A_EJECT + 4, SNAP_AT], [1, 0], SNAP) : 1;
             return (
               <div
@@ -149,7 +150,7 @@ const LogoInner: React.FC<LogoProps> = ({ label, tagline, style }) => {
       <Solid
         width={width}
         height={height}
-        style={{ position: "absolute", inset: 0, mixBlendMode: "screen", opacity: tween(frame, [0, 24, 34], [0.8, 0.7, 0], (t) => t) }}
+        style={{ position: "absolute", inset: 0, mixBlendMode: "screen", opacity: tween(frame, [0, 24, 34], [0.65, 0.5, 0], (t) => t) }}
         effects={[
           lightLeak({
             seed: 3,

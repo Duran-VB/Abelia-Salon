@@ -9,5 +9,5 @@ mkdir -p "$(dirname "$out")"
 ffmpeg -y -hide_banner -loglevel error -i "$in" \
   -c:v copy \
   -af "loudnorm=I=-14:TP=-1.0:LRA=9" -ar 48000 -c:a aac -b:a 320k \
-  -movflags +faststart "$out"
+  -t 25 -movflags +faststart "$out"
 echo "wrote $out"

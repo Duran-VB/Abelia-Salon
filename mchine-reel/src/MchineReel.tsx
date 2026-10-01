@@ -75,8 +75,8 @@ export const MchineReel: React.FC = () => {
       <Hud />
       <Grain />
 
-      <Audio name="Music" src={staticFile("audio/music.wav")} volume={0.62} premountFor={fps} />
-      <Audio name="SFX" src={staticFile("audio/sfx.wav")} volume={0.7} premountFor={fps} />
+      <Audio name="Music" src={staticFile("audio/music.wav")} volume={0.5} premountFor={fps} />
+      <Audio name="SFX" src={staticFile("audio/sfx.wav")} volume={0.6} premountFor={fps} />
       <Audio name="VO: You have three seconds" from={voice("p01").from} src={staticFile("vo/p01.wav")} premountFor={fps} />
       <Audio name="VO: That's all a visitor gives" from={voice("p02").from} src={staticFile("vo/p02.wav")} premountFor={fps} />
       <Audio name="VO: Most websites waste them" from={voice("p03").from} src={staticFile("vo/p03.wav")} premountFor={fps} />
