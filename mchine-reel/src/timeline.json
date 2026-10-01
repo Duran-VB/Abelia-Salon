@@ -1,0 +1,51 @@
+{
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 750,
+  "scenes": {
+    "Hook": { "from": 0, "durationInFrames": 120 },
+    "Waste": { "from": 120, "durationInFrames": 60 },
+    "Logo": { "from": 180, "durationInFrames": 90 },
+    "Build": { "from": 270, "durationInFrames": 105 },
+    "Pillars": { "from": 375, "durationInFrames": 90 },
+    "Convert": { "from": 465, "durationInFrames": 75 },
+    "Rebuilt": { "from": 540, "durationInFrames": 90 },
+    "Cta": { "from": 630, "durationInFrames": 120 }
+  },
+  "voice": [
+    { "id": "p01", "from": 6, "text": "You have three seconds." },
+    { "id": "p02", "from": 46, "text": "That's all a visitor gives your website." },
+    { "id": "p03", "from": 123, "text": "Most websites waste them." },
+    { "id": "p04", "from": 188, "text": "Meet MCHINE." },
+    { "id": "p05", "from": 273, "text": "We design and build websites that work as hard as you do." },
+    { "id": "p06", "from": 377, "text": "Sharp design." },
+    { "id": "p07", "from": 407, "text": "Clean code." },
+    { "id": "p08", "from": 437, "text": "Built for speed." },
+    { "id": "p09", "from": 470, "text": "Made to turn scrollers into customers." },
+    { "id": "p10", "from": 548, "text": "Your business, rebuilt." },
+    { "id": "p11", "from": 640, "text": "MCHINE. Let's build yours." }
+  ],
+  "sfx": [
+    { "type": "tick", "at": [0, 30, 60] },
+    { "type": "tickFinal", "at": [90] },
+    { "type": "glitch", "at": [120, 133, 147, 158] },
+    { "type": "powerDown", "at": [166] },
+    { "type": "riser", "at": [138], "length": 42 },
+    { "type": "impact", "at": [180, 630] },
+    { "type": "stamp", "at": [181, 184, 187, 190, 193, 196, 199] },
+    { "type": "eject", "at": [222] },
+    { "type": "snap", "at": [231] },
+    { "type": "typeClick", "at": [238, 240, 242, 244, 246, 248, 250, 252, 254, 256, 258] },
+    { "type": "riser", "at": [246], "length": 24 },
+    { "type": "impactSoft", "at": [270] },
+    { "type": "pop", "at": [282, 290, 298, 306, 314, 322, 330, 338, 346] },
+    { "type": "whoosh", "at": [373, 403, 433, 463, 538] },
+    { "type": "typeClick", "at": [409, 411, 413, 416, 418, 420, 423, 425, 427] },
+    { "type": "zoom", "at": [436] },
+    { "type": "tap", "at": [497] },
+    { "type": "ding", "at": [503, 513, 523] },
+    { "type": "reverseSwell", "at": [588], "length": 42 },
+    { "type": "shine", "at": [664] },
+    { "type": "stinger", "at": [705] }
+  ]
+}
