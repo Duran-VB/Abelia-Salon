@@ -23,7 +23,7 @@ PHRASES = [
     ("p08", "Built for speed."),
     ("p09", "Made to turn scrollers into customers."),
     ("p10", "Your business, rebuilt."),
-    ("p11", "Machine. Let's build yours."),
+    ("p11", "Let's build yours."),
 ]
 
 model_dir, voice, speed = sys.argv[1], sys.argv[2], float(sys.argv[3])

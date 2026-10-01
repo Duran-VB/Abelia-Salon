@@ -69,10 +69,10 @@ const CtaInner: React.FC<CtaProps> = ({ brand, line1, line2, button, footer, sty
       </div>
 
       <div style={{ position: "absolute", top: 930, left: 60, right: 60, textAlign: "center" }}>
-        <MaskLine enter={22} style={{ ...displayStyle(104), color: C.bone }}>
+        <MaskLine enter={7} style={{ ...displayStyle(104), color: C.bone }}>
           {line1}
         </MaskLine>
-        <MaskLine enter={32} style={{ ...displayStyle(104), color: C.signal }}>
+        <MaskLine enter={27} style={{ ...displayStyle(104), color: C.signal }}>
           {line2}
         </MaskLine>
       </div>

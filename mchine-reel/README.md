@@ -14,7 +14,7 @@ The finished video is in [`renders/`](renders/).
 | 12.5–15.5s | **Pillars**: design / code / speed | "Sharp design. Clean code. Built for speed." |
 | 15.5–18s | **Convert**: fast scroll, tap, notifications | "Made to turn scrollers into customers." |
 | 18–21s | **Rebuilt**: palette flip, letters machine‑assembled | "Your business, rebuilt." |
-| 21–25s | **CTA**: wordmark, shine, "Link in bio" | "MCHINE. Let's build yours." |
+| 21–25s | **CTA**: wordmark, shine, "Link in bio" | "Let's build yours." |
 
 ## Editing
 

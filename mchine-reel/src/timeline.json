@@ -23,7 +23,7 @@
     { "id": "p08", "from": 437, "text": "Built for speed." },
     { "id": "p09", "from": 470, "text": "Made to turn scrollers into customers." },
     { "id": "p10", "from": 548, "text": "Your business, rebuilt." },
-    { "id": "p11", "from": 640, "text": "MCHINE. Let's build yours." }
+    { "id": "p11", "from": 638, "text": "Let's build yours." }
   ],
   "sfx": [
     { "type": "tick", "at": [0, 30, 60] },
